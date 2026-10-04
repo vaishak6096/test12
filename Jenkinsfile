@@ -1,11 +1,6 @@
 pipeline{
   agent any
      stages {
-         stage('Checkout'){
-                   steps{
-                   git branch: 'main',
-                   url: 'https://www.github.com/vaishak6096/test12'
-                          }}
          stage('test'){
                    steps{bat 'python -m unittest discover'}}
          stage('Run'){

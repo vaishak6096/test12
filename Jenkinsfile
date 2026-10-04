@@ -3,8 +3,8 @@ pipeline{
      stages{
          stage('Checkout'){
                    steps{
-                   git branch 'main',
-                   url: 'https://www.github.com/testapp'
+                   git branch: 'main',
+                   url: 'https://www.github.com/test12'
                           }}
          stage('test'){
                    steps{bat 'python -m unittest discover'}}

@@ -4,7 +4,7 @@ pipeline{
          stage('Checkout'){
                    steps{
                    git branch: 'main',
-                   url: 'https://www.github.com/test12'
+                   url: 'https://www.github.com/vaishak6096/test12'
                           }}
          stage('test'){
                    steps{bat 'python -m unittest discover'}}

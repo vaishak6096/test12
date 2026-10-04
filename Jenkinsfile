@@ -10,7 +10,7 @@ pipeline{
                    steps{bat 'python -m unittest discover'}}
          stage('Run'){
                    steps{bat 'python app.py'}}
-         stage('Deploy'){
+         stage('Deploy'){ steps{
                    echo 'Deploying...'
                             }}}
          post{
